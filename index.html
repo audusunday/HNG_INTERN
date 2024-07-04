@@ -7,66 +7,40 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="container">
-        <h1 data-testid="slackDisplayName">Sunnado</h1>
-        <p data-testid="currentTimeUTC">Current Time in UTC: 19:10</p>
-        <p data-testid="currentDay">Current Day: Wednesdday</p>
-        <p data-testid="slackEmail">sunnadu13@gmail.com</p>
-        <img src="https://ca.slack-edge.com/T07466B189M-U07A5FKJQT0-a445b8efba07-512" alt="Profile Picture" data-testid="slackProfilePicture">
-        <nav>
-            <ul>
-                <li><a href="https://hng.tech/learn" data-testid="hngLink">HNG Learn</a></li>
-                <li><a href="https://keyword.dog" data-testid="keywordLink">Keyword Dog</a></li>
-                <li><a href="https://scrapeanyweb.site" data-testid="scrapeanywebLink">Scrape Any Web</a></li>
-            </ul>
-        </nav>
-        <section>
-            <h1>My Tech Goals for the Next 2 Years</h1>
-            <ul>
-                <h3>Front-End Development Mastery</h3>
-                <ol>
-                    <li>Attain a high level of proficiency in front-end development, focusing primarily on React.</li>
-                    <li>Deepen understanding of React ecosystem tools, including Redux, React Router, and React Hooks.</li>
-                    <li>Build a portfolio of projects demonstrating advanced React capabilities and modern front-end practices.</li>
-                </ol>
-            </ul>
+    <div class="container">
+        <h1>My Tech Goals for the Next 2 Years</h1>
+        
+        <div class="profile">
+            <img src="https://ca.slack-edge.com/T07466B189M-U07A5FKJQT0-a445b8efba07-512" alt="Slack Profile Picture" data-testid="slackProfilePicture">
+            <p><strong>Slack Name:</strong> <span data-testid="slackDisplayName">Your Slack Name</span></p>
+            <p><strong>Slack Email:</strong> <span data-testid="slackEmail">your-slack-email@example.com</span></p>
+        </div>
 
-            <ul>
-                <h3>Securing a Front-End Role</h3>
-                <ol>
-                    <li>Acquire the skills and experience necessary to qualify for a front-end developer position in a reputable organization.</li>
-                    <li>Enhance proficiency in HTML, CSS, and JavaScript, ensuring adherence to industry standards and best practices..</li>
-                    <li>Gain experience with version control systems like Git and collaborative development workflows.</li>
-                </ol>
-            </ul>
+        <div class="time-info">
+            <p><strong>Current Time in UTC:</strong> <span data-testid="currentTimeUTC"></span></p>
+            <p><strong>Current Day:</strong> <span data-testid="currentDay"></span></p>
+        </div>
 
-            <ul>
-                <h3>DevOps Expertise</h3>
-                <ol>
-                    <li>Develop a strong foundation in DevOps principles and practices.</li>
-                    <li>Gain practical experience with AWS services, focusing on infrastructure management, CI/CD pipelines, and automation. </li>
-                    <li>Learn to implement scalable and efficient deployment processes, ensuring smooth and reliable application delivery.</li>
-                </ol>
-            </ul>
+        <div class="links">
+            <p><a href="https://hng.tech/learn" data-testid="hngLink" target="_blank">Learn at HNG</a></p>
+            <p><a href="https://keyword.dog" data-testid="keywordLink" target="_blank">Keyword Dog</a></p>
+            <p><a href="https://scrapeanyweb.site" data-testid="scrapeanywebLink" target="_blank">Scrape Any Web</a></p>
+        </div>
 
-            <ul>
-                <h3>Expanding Programming Knowledge</h3>
-                <ol>
-                    <li>Learn and master additional programming languages, with a focus on Python for back-end development and scripting.</li>
-                    <li>Gain proficiency in working with MongoDB, understanding its usage, strengths, and best practices for database management.</li>
-                    <li>Explore and become comfortable with other relevant technologies and frameworks that complement your development skillset.</li>
-                </ol>
-            </ul>
-
-            <ul>
-                <h3>Continuous Learning and Improvement</h3>
-                <ol>
-                    <li>Stay updated with the latest trends and advancements in web development, DevOps, and programming languages.</li>
-                    <li>Participate in coding challenges, hackathons, and open-source projects to sharpen skills and gain real-world experience.</li>
-                    <li>Engage with the tech community through forums, meetups, and conferences to network and learn from industry experts.</li>
-                </ol>
-            </ul>
-        </section>
+        <div class="goals">
+            <section>
+                <h2>My Tech Goals for the Next 2 Years</h2>
+                <ul>
+                    <li><strong>Front-End Development Mastery:</strong> Attain proficiency in React, Redux, and modern front-end practices.</li>
+                    <li><strong>Securing a Front-End Role:</strong> Gain experience and skills to qualify for a front-end developer position.</li>
+                    <li><strong>DevOps Expertise:</strong> Learn AWS, CI/CD pipelines, and deployment automation.</li>
+                    <li><strong>Expanding Programming Knowledge:</strong> Master Python for back-end and MongoDB for database management.</li>
+                    <li><strong>Continuous Learning:</strong> Stay updated with web development trends and participate in coding challenges.</li>
+                </ul>
+            </section>
+        </div>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
